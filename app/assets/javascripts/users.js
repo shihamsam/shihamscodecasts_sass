@@ -27,7 +27,7 @@ $(document).ready(function(){
         
     }); // form submission
     
-    function stripeRespondHandler(){
+    function stripeRespondHandler(status, response){
         //get a reference to the form:
         var f = $('#new_user');
         
