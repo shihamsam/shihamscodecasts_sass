@@ -1,2 +1,8 @@
 <h1>Show User</h1>
-<%= @user %>
+<%= @user.profile.first_name %>
+<%= @user.profile.last_name %>
+<%= if @user.plan_id == 2 %>
+    <%= @user.profile.phone_number %>
+    <%= @user.profile.contact_email %>
+<% end %>
+<%= @user.profile.job_title %>
