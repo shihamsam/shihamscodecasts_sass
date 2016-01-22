@@ -8,7 +8,7 @@
         <div class="col-md-6">
             <div class="well">
                  <h1 class="text-center">Your profile</h1>
-                <% if false#current_user.profile %>
+                <% if current_user.profile %>
                     <%= link_to "Edit your profile", '#', class: 'btn btn-default btn-lg btn-block' %>
                     <%= link_to "View your profile", user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
                 <% else %>
