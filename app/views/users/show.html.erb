@@ -1,4 +1,6 @@
 <h1>Show User</h1>
+<%= image_tag @user.profile.avatar.url %>
+
 <%= @user.profile.first_name %>
 <%= @user.profile.last_name %>
 <% if @user.plan_id == 2 %>
