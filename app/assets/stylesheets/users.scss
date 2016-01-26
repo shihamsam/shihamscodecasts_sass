@@ -1,3 +1,5 @@
+
+/* Users Show page styles */
 .job-title-icon{
     width: 30px;
     height: 30px;
@@ -18,6 +20,11 @@
     }
 }
 
+.user-show-avatar{
+    width:128px;
+    height:129px;
+}
+
 .well.profile-description{
    
     background-color: #5cb85c;
@@ -28,4 +35,13 @@
 .well.contact-info{
     background-color: #31b0d5;
     border-color: #269abc;
+}
+
+.well.white-bg{
+    background-color:#fff;
+}
+
+/* Users index page styles */
+.user-index-avatar{
+    border-radius:50%;
 }
