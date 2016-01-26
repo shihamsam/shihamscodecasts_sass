@@ -16,6 +16,9 @@
                                 <% end %>
                                 <p>
                                     <%= u.profile.job_title %>
+                                    <% if u.plan_id == 2 %>
+                                        <span class="label label-danger">PRO</span>
+                                    <% end %>
                                 </p>
                              </div>
                               
