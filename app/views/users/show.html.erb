@@ -1,10 +1,28 @@
-<h1>Show User</h1>
-<%= image_tag @user.profile.avatar.url %>
-
-<%= @user.profile.first_name %>
-<%= @user.profile.last_name %>
-<% if @user.plan_id == 2 %>
-    <%= @user.profile.phone_number %>
-    <%= @user.profile.contact_email %>
-<% end %>
-<%= @user.profile.job_title %>
+<div class="row">
+    <div class="col-md-3  text-center">
+        <%= image_tag @user.profile.avatar.url %>
+    </div>
+    <div class="col-md-6">
+        <h1>
+        <%= @user.profile.first_name %>
+        <%= @user.profile.last_name %>
+        <%= @user.id %>
+        
+         
+        </h1>
+        <h3><span class="job-title-icon"><%= job_title_icon %></span> <%= @user.profile.job_title %></h3>
+        <div class="well profile-block profile-description">
+            <h3>Description</h3>
+            <%= @user.profile.description %> <br/>
+           
+        </div>
+        <% if true #@user.plan_id == 2 %>
+            <div class="well profile-block contact-info">
+                <h3>Contact Info</h3>
+                <%= @user.profile.phone_number %> <br />
+                <%= @user.profile.contact_email %>
+            </div>
+        <% end %>
+       
+    </div>
+</div>
